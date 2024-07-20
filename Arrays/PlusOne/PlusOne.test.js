@@ -1,7 +1,7 @@
 
 const plusOne = require("./PlusOne")
 
-it('adds one to [1, 2, 3] to get [1, 2, 4]', () => {
+test('adds one to [1, 2, 3] to get [1, 2, 4]', () => {
     expect(plusOne([1, 2, 3])).toEqual([1, 2, 4]);
 });
 
