@@ -25,4 +25,4 @@ var findMinimumMountainSum = function (nums) {
   return minSum === Infinity ? -1 : minSum;
 };
 
-module.exports = { findMinimumMountainSum };
+module.exports = findMinimumMountainSum;
