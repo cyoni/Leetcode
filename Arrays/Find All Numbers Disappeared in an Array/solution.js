@@ -1,5 +1,5 @@
  
-// https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/submissions/
+// https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 // O(n) runtime
 // O(1) space
 
@@ -22,5 +22,5 @@ var findDisappearedNumbers = function(arr) {
     return minNums;
 };
 
-//module.export = 
-findDisappearedNumbers([4,3,2,7,8,2,3,1])
+ 
+module.exports = findDisappearedNumbers
