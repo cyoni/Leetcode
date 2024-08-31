@@ -5,7 +5,7 @@
 var findLength = function (nums1, nums2) {
   const matrix = Array(nums1.length + 1)
     .fill(0)
-    .map((x) => Array(nums2.length + 1).fill(0));
+    .map((_) => Array(nums2.length + 1).fill(0));
   let maxLen = 0;
 
   for (let i = 1; i < nums1.length + 1; i++) {
