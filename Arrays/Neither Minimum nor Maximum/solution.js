@@ -1,3 +1,7 @@
+// https://leetcode.com/problems/neither-minimum-nor-maximum/
+// runtime: O(n) where n is the number of items in 'nums'
+// space: O(1)
+
 var findNonMinOrMax = function (nums) {
   if (nums.length < 3) return -1;
 
