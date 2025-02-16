@@ -2,32 +2,23 @@
 // space: O(1)
 // https://leetcode.com/problems/intersection-of-two-linked-lists/
 
-const ListNode = require("../../utils/tree");
+const { ListNode, countList } = require("../../utils/linkedlist");
+
+const fillShortestList = (head, num) => {
+  const root = new ListNode(null);
+
+  let curr = root;
+  while (num > 0) {
+    curr.next = new ListNode(null);
+    curr = curr.next;
+    num--;
+  }
+
+  curr.next = head;
+  return root.next;
+};
 
 var getIntersectionNode = function (headA, headB) {
-  const countList = (head) => {
-    let counter = 0;
-    while (head) {
-      head = head.next;
-      counter++;
-    }
-    return counter;
-  };
-
-  const fillShortestList = (head, num) => {
-    const root = new ListNode(null);
-
-    let curr = root;
-    while (num > 0) {
-      curr.next = new ListNode(null);
-      curr = curr.next;
-      num--;
-    }
-
-    curr.next = head;
-    return root.next;
-  };
-
   const firstLen = countList(headA);
   const secLen = countList(headB);
 
